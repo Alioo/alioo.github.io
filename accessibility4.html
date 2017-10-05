@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<h2>Inputs</h2>
+<p>BIG NOTE: Placeholders are not accessible!<br>
+The contrast on place holders is not accessible. They break the accessibility contrast rules</p>
+<h3>Buttons</h3>
+<li>Give button elements inner text</li>
+<li>Do NOT use images for buttons, but if you do, use alt text</li>
+<li>Use the button tag and not the input type="button" element,<br>you will have more access to styling</li>
+<li>For groups of buttons, use a fieldset to group them together.<br>This helps the flow of the page, and may help those with sensory issues</li><br>
+<h3>Other</h3>
+<li>When a field is required, use the required tag so that screen readers will recognize it</li>
+<li>Clicking the field should always do the same thing as entering the field with the keyboard</li>
+<li>Clickable div and span elements are not recommended, you will lose many of the build in accessibility<br>options of the form element</li><br>
+<br><form action="accessibility5.html">
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email"><br><br>
+        <label for="reason">Reason:</label>
+        <input type="text" id="reason"><br><br>
+    </fieldset>
+    <button type="submit">The DOM</button>
+</form>
+</body>
+</html>
